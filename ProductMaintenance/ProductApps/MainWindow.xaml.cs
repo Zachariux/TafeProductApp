@@ -35,12 +35,8 @@ namespace ProductApps
                 cProduct.calTotalPayment();
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 totalChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment+25);
-<<<<<<< HEAD
-                totalWrapChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment + 25 + 5);
-=======
                 totalChargeLabelTextBlock.Text = Convert.ToString(cProduct.TotalPayment + 25+5);
                 GST.Text = Convert.ToString((cProduct.TotalPayment + 25 + 5)*1.1m);
->>>>>>> remotes/origin/feat_wrap1.2
             }
             catch (FormatException)
             {
@@ -55,11 +51,7 @@ namespace ProductApps
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
             totalChargeTextBlock.Text = "";
-<<<<<<< HEAD
-            totalWrapChargeTextBlock.Text = "";
-=======
             totalChargeLabelTextBlock.Text = "";
->>>>>>> remotes/origin/feat_wrap1.2
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
